@@ -1,4 +1,8 @@
 #archivo LibDNI.py
 def calculoLetra(numerodni):
-  numeroL = numerodni%23
-  return numeroL
+  letras=("TRWAGMYFPDXBNJZSQVHLCKE")
+  dni=int(input("Introduzca los números de su DNI aquí porfavor: "))
+  numero = numerodni%23
+  numeroL = numero(dni)
+  letra = letras[numeroL]
+  return letra
